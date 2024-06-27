@@ -1,35 +1,58 @@
-/* Calculator.css */
-
 .calculator {
-    width: 250px;
-    margin: auto;
-  }
-  
-  .display {
-    margin-bottom: 10px;
-  }
-  
-  .display input {
-    width: 100%;
-    font-size: 20px;
-    text-align: right;
-    padding: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-  }
-  
-  .buttons button {
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .buttons button:hover {
-    background-color: lightgray;
-  }
-  
+  width: 250px;
+  margin: auto;
+  background-color: #f0f0f0; /* Light gray background for the calculator */
+  border-radius: 10px; /* Rounded corners for the calculator */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the calculator */
+}
+
+.display {
+  margin-bottom: 10px;
+}
+
+.display input {
+  width: 100%;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px; /* Increased padding for input fields */
+  margin-bottom: 10px; /* Increased margin between display and buttons */
+  border: 2px solid #ccc; /* Light border around input fields */
+  border-radius: 5px; /* Rounded corners for input fields */
+  background-color: #fff; /* White background for input fields */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.buttons button {
+  font-size: 20px;
+  padding: 15px; /* Increased padding for buttons */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px; /* Rounded corners for buttons */
+  background-color: #e0e0e0; /* Light gray background for buttons */
+  color: #333; /* Dark text color for buttons */
+}
+
+.buttons button:hover {
+  background-color: #d0d0d0; /* Darker gray on hover */
+}
+
+.buttons .operator {
+  background-color: #ffa500; /* Orange background for operator buttons */
+  color: #fff; /* White text for operator buttons */
+}
+
+.buttons .clear {
+  background-color: #f44336; /* Red background for clear button */
+  color: #fff; /* White text for clear button */
+}
+
+.buttons .equals {
+  background-color: #4caf50; /* Green background for equals button */
+  color: #fff; /* White text for equals button */
+}
